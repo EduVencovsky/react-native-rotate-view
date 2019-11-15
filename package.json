@@ -20,9 +20,5 @@
   "license": "ISC",
   "devDependencies": {
     "prop-types": "^15.7.2"
-  },
-  "peerDependencies": {
-    "react": "^16.0.8",
-    "react-native": "^0.59.0"
   }
 }
