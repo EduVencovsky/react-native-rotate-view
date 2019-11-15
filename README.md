@@ -16,4 +16,5 @@ npm i react-native-rotate-view
 | initialDegree   | string (number + 'deg')        | '0deg'    | Initial degree of the animation
 | style   | style        | null    | Style of the Animated.View
 | children   | Component        |  null    | React Component to render inside the Animated.View
+| onAnimationEnd   | func        |  null    | Callback when animation ends
 

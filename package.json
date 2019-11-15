@@ -1,6 +1,6 @@
 {
   "name": "react-native-rotate-view",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React Native Animated Rotating View",
   "main": "src/index.js",
   "scripts": {

@@ -2,7 +2,16 @@ import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Animated, Easing } from 'react-native'
 
-const RotateView = ({ rotate, degree, initialDegree, duration, children, style, ...otherProps }) => {
+const RotateView = ({
+    rotate,
+    degree,
+    initialDegree,
+    duration,
+    children,
+    style,
+    onAnimationEnd,
+    ...otherProps
+}) => {
 
     const [rotateValue] = useState(new Animated.Value(0))
 
@@ -16,7 +25,7 @@ const RotateView = ({ rotate, degree, initialDegree, duration, children, style, 
                 easing: Easing.linear,
                 useNativeDriver: true
             }
-        ).start()
+        ).start(onAnimationEnd)
     }, [rotate, duration, rotateValue])
 
     const spin = rotateValue.interpolate({
@@ -52,6 +61,7 @@ RotateView.propTypes = {
     initialDegree: PropTypes.string,
     style: PropTypes.object,
     children: PropTypes.node,
+    onAnimationEnd: PropTypes.func,
 }
 
 export default RotateView
