@@ -1,0 +1,21 @@
+{
+  "name": "react-native-rotate-view",
+  "version": "1.0.0",
+  "description": "React Native Animated Rotating View",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EduVencovsky/react-native-rotate-view"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "rotate",
+    "view"
+  ],
+  "author": "Venkos",
+  "license": "ISC"
+}
