@@ -17,5 +17,12 @@
     "view"
   ],
   "author": "Venkos",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-native": "^0.61.4"
+  }
 }
