@@ -2,7 +2,7 @@
   "name": "react-native-rotate-view",
   "version": "1.0.0",
   "description": "React Native Animated Rotating View",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,9 @@
   "license": "ISC",
   "dependencies": {
     "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.",
+    "react-native": "^0.59.0"
   }
 }
