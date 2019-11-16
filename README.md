@@ -7,9 +7,28 @@ Rotate Anything you want.
 npm i react-native-rotate-view
 ```
 
+### Example
+
+    import React, { useState } from 'react'
+    import RotateView from 'react-native-rotate-view'
+
+    export default function App() {
+
+        const [rotate, setRotate] = useState(true)
+
+        return (            
+            <RotateView
+                rotate={rotate}
+            >
+            ...
+            </RotateView>
+        )
+    }
+
+
 ### RotateView:
 | Prop      | Type          | Default             | Description |
-| ------------- |:-------------:|:------------:       | ----------- |
+| :-------------: |:-------------:|:------------:       | ----------- |
 | rotate          | bool        | false          | Change this variable to trigger rotation
 | degree         | string (number + 'deg')       | '90deg'           | Degree that the Animated.View will rotate to. (set negative to rotate backwards)
 | duration       | number          | 100                | Time to run the animation
